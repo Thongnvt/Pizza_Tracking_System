@@ -1,0 +1,994 @@
+[
+  {
+    "timestamp": "2025-06-16 13:27:29.601993",
+    "detection": {
+      "bbox": [
+        1065,
+        104,
+        1241,
+        208
+      ],
+      "class": 0,
+      "confidence": "0.7651822",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:36:00.626244",
+    "detection": {
+      "bbox": [
+        929,
+        67,
+        1097,
+        210
+      ],
+      "class": 1,
+      "confidence": "0.2641414",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:36:02.974929",
+    "detection": {
+      "bbox": [
+        929,
+        67,
+        1097,
+        210
+      ],
+      "class": 1,
+      "confidence": "0.2641414",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:36:05.081026",
+    "detection": {
+      "bbox": [
+        929,
+        67,
+        1097,
+        210
+      ],
+      "class": 1,
+      "confidence": "0.2641414",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:36:26.736150",
+    "detection": {
+      "bbox": [
+        881,
+        87,
+        1250,
+        229
+      ],
+      "class": 1,
+      "confidence": "0.7074017",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:36:56.882229",
+    "detection": {
+      "bbox": [
+        1058,
+        84,
+        1238,
+        207
+      ],
+      "class": 2,
+      "confidence": "0.6546333",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 13:37:26.828356",
+    "detection": {
+      "bbox": [
+        956,
+        65,
+        1064,
+        169
+      ],
+      "class": 2,
+      "confidence": "0.46060145",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 15:47:52.307317",
+    "detection": {
+      "bbox": [
+        1062,
+        104,
+        1241,
+        207
+      ],
+      "class": 0,
+      "confidence": "0.7244699",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 15:51:37.332464",
+    "detection": {
+      "bbox": [
+        1063,
+        106,
+        1269,
+        204
+      ],
+      "class": 0,
+      "confidence": "0.37127775",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 15:51:39.371807",
+    "detection": {
+      "bbox": [
+        1063,
+        106,
+        1269,
+        204
+      ],
+      "class": 0,
+      "confidence": "0.37127775",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:17:21.464440",
+    "detection": {
+      "bbox": [
+        927,
+        72,
+        1286,
+        204
+      ],
+      "class": 1,
+      "confidence": "0.8644907",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:17:50.579918",
+    "detection": {
+      "bbox": [
+        882,
+        89,
+        1252,
+        234
+      ],
+      "class": 1,
+      "confidence": "0.39651707",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:17:52.821748",
+    "detection": {
+      "bbox": [
+        882,
+        89,
+        1252,
+        234
+      ],
+      "class": 1,
+      "confidence": "0.39651707",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:41:15.341575",
+    "detection": {
+      "bbox": [
+        927,
+        72,
+        1280,
+        204
+      ],
+      "class": 1,
+      "confidence": "0.82323015",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:47:25.678238",
+    "detection": {
+      "bbox": [
+        958,
+        69,
+        1287,
+        205
+      ],
+      "class": 1,
+      "confidence": "0.85097235",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:50:18.651804",
+    "detection": {
+      "bbox": [
+        556,
+        429,
+        790,
+        560
+      ],
+      "class": 2,
+      "confidence": "0.3228348",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:50:21.730679",
+    "detection": {
+      "bbox": [
+        556,
+        429,
+        790,
+        560
+      ],
+      "class": 2,
+      "confidence": "0.3228348",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:50:23.626185",
+    "detection": {
+      "bbox": [
+        556,
+        429,
+        790,
+        560
+      ],
+      "class": 2,
+      "confidence": "0.3228348",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 19:50:29.463017",
+    "detection": {
+      "bbox": [
+        556,
+        429,
+        790,
+        560
+      ],
+      "class": 2,
+      "confidence": "0.3228348",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [
+      "Wrong class"
+    ],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:17:01.643338",
+    "detection": {
+      "bbox": [
+        945,
+        70,
+        1278,
+        198
+      ],
+      "class": 1,
+      "confidence": "0.7902887",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:17:30.764238",
+    "detection": {
+      "bbox": [
+        1059,
+        106,
+        1236,
+        207
+      ],
+      "class": 0,
+      "confidence": "0.6725149",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:17:32.691459",
+    "detection": {
+      "bbox": [
+        1059,
+        106,
+        1236,
+        207
+      ],
+      "class": 0,
+      "confidence": "0.6725149",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:18:02.146532",
+    "detection": {
+      "bbox": [
+        1057,
+        85,
+        1234,
+        208
+      ],
+      "class": 2,
+      "confidence": "0.61157686",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:20:49.460031",
+    "detection": {
+      "bbox": [
+        561,
+        427,
+        790,
+        561
+      ],
+      "class": 2,
+      "confidence": "0.36190197",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:22:44.359500",
+    "detection": {
+      "bbox": [
+        1294,
+        335,
+        1389,
+        397
+      ],
+      "class": 0,
+      "confidence": "0.26068667",
+      "track_id": null
+    },
+    "is_correct": false,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:22:46.578347",
+    "detection": {
+      "bbox": [
+        1294,
+        335,
+        1389,
+        397
+      ],
+      "class": 0,
+      "confidence": "0.26068667",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:22:58.930372",
+    "detection": {
+      "bbox": [
+        552,
+        378,
+        706,
+        467
+      ],
+      "class": 0,
+      "confidence": "0.44370282",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:23:29.983014",
+    "detection": {
+      "bbox": [
+        601,
+        393,
+        789,
+        537
+      ],
+      "class": 2,
+      "confidence": "0.25392488",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:23:31.237896",
+    "detection": {
+      "bbox": [
+        601,
+        393,
+        789,
+        537
+      ],
+      "class": 2,
+      "confidence": "0.25392488",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:23:59.377220",
+    "detection": {
+      "bbox": [
+        615,
+        484,
+        847,
+        595
+      ],
+      "class": 2,
+      "confidence": "0.28565502",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:24:01.156163",
+    "detection": {
+      "bbox": [
+        615,
+        484,
+        847,
+        595
+      ],
+      "class": 2,
+      "confidence": "0.28565502",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:24:05.335846",
+    "detection": {
+      "bbox": [
+        615,
+        484,
+        847,
+        595
+      ],
+      "class": 2,
+      "confidence": "0.28565502",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:24:29.484130",
+    "detection": {
+      "bbox": [
+        455,
+        326,
+        835,
+        466
+      ],
+      "class": 1,
+      "confidence": "0.870251",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:25:00.123249",
+    "detection": {
+      "bbox": [
+        449,
+        324,
+        833,
+        475
+      ],
+      "class": 1,
+      "confidence": "0.874714",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:25:33.381333",
+    "detection": {
+      "bbox": [
+        630,
+        398,
+        798,
+        459
+      ],
+      "class": 0,
+      "confidence": "0.544821",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:25:34.544751",
+    "detection": {
+      "bbox": [
+        630,
+        398,
+        798,
+        459
+      ],
+      "class": 0,
+      "confidence": "0.544821",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:25:37.295918",
+    "detection": {
+      "bbox": [
+        630,
+        398,
+        798,
+        459
+      ],
+      "class": 0,
+      "confidence": "0.544821",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:25:59.093387",
+    "detection": {
+      "bbox": [
+        650,
+        397,
+        775,
+        455
+      ],
+      "class": 0,
+      "confidence": "0.2753054",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:26:01.067159",
+    "detection": {
+      "bbox": [
+        650,
+        397,
+        775,
+        455
+      ],
+      "class": 0,
+      "confidence": "0.2753054",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:26:05.151552",
+    "detection": {
+      "bbox": [
+        650,
+        397,
+        775,
+        455
+      ],
+      "class": 0,
+      "confidence": "0.2753054",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:26:05.635469",
+    "detection": {
+      "bbox": [
+        650,
+        397,
+        775,
+        455
+      ],
+      "class": 0,
+      "confidence": "0.2753054",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:37:19.167835",
+    "detection": {
+      "bbox": [
+        452,
+        323,
+        838,
+        456
+      ],
+      "class": 1,
+      "confidence": "0.81477165",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:38:32.949050",
+    "detection": {
+      "bbox": [
+        924,
+        71,
+        1287,
+        207
+      ],
+      "class": 1,
+      "confidence": "0.8913514",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:39:03.105104",
+    "detection": {
+      "bbox": [
+        875,
+        91,
+        1247,
+        236
+      ],
+      "class": 1,
+      "confidence": "0.6635823",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-16 20:39:05.334904",
+    "detection": {
+      "bbox": [
+        875,
+        91,
+        1247,
+        236
+      ],
+      "class": 1,
+      "confidence": "0.6635823",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:14:42.680382",
+    "detection": {
+      "bbox": [
+        965,
+        69,
+        1289,
+        204
+      ],
+      "class": 1,
+      "confidence": "0.7776717",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:15:13.081863",
+    "detection": {
+      "bbox": [
+        859,
+        99,
+        1225,
+        253
+      ],
+      "class": 1,
+      "confidence": "0.7412841",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:15:42.702787",
+    "detection": {
+      "bbox": [
+        1060,
+        81,
+        1248,
+        212
+      ],
+      "class": 2,
+      "confidence": "0.60629445",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:25:50.029449",
+    "detection": {
+      "bbox": [
+        925,
+        72,
+        1286,
+        206
+      ],
+      "class": 1,
+      "confidence": "0.88493663",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:26:20.126079",
+    "detection": {
+      "bbox": [
+        879,
+        83,
+        1246,
+        244
+      ],
+      "class": 1,
+      "confidence": "0.63075787",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 11:26:23.314556",
+    "detection": {
+      "bbox": [
+        879,
+        83,
+        1246,
+        244
+      ],
+      "class": 1,
+      "confidence": "0.63075787",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-17 13:36:00.316132",
+    "detection": {
+      "bbox": [
+        926,
+        71,
+        1286,
+        206
+      ],
+      "class": 1,
+      "confidence": "0.8776203",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-18 15:57:57.241893",
+    "detection": {
+      "bbox": [
+        311,
+        862,
+        973,
+        1051
+      ],
+      "class": 1,
+      "confidence": "0.34339118",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-18 15:57:58.381840",
+    "detection": {
+      "bbox": [
+        311,
+        862,
+        973,
+        1051
+      ],
+      "class": 1,
+      "confidence": "0.34339118",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  },
+  {
+    "timestamp": "2025-06-18 15:58:00.674198",
+    "detection": {
+      "bbox": [
+        311,
+        862,
+        973,
+        1051
+      ],
+      "class": 1,
+      "confidence": "0.34339118",
+      "track_id": null
+    },
+    "is_correct": true,
+    "issues": [],
+    "tracking_info": null,
+    "user_feedback": true
+  }
+]
