@@ -1,247 +1,203 @@
- Pizza Box Tracker – Smart Detection & State Management System
+# Pizza Box Tracker – Smart Detection & State Management System
 
- Objective: 
+An intelligent vision-based system to automatically detect, track, and count pizza boxes sold based on their open/close status, location, and status transitions.
 
-Build an automated system to count the number of pizzas sold over a given time period based on:
+## 📌 Objective
 
-+ The open/close status of the pizza box.
+The goal of this project is to automate pizza sale counting through:
 
-+ The position of the pizza box within the delivery area 
+-   Detecting the open/close status of pizza boxes.
+-   Verifying if a box is within the delivery area (ROI).
+-   Assigning unique IDs and managing the state history for each box.
 
-+ ID assignment and state management for each box
+## 🎯 System Workflow
 
-  Overall Processing Flow: 
+1.  **Detection**: YOLOv8 detects pizza boxes and classifies them as "open" or "close".
+2.  **Tracking**: DeepSORT or ByteTrack assigns a unique ID to each detected box.
+3.  **ROI Check**: Determine if a box is within the defined delivery area.
+4.  **State Management**: Track the history of status changes for each box.
+5.  **Sold Condition**: Apply logic rules to determine if a box has been sold.
 
-+ YOLOv8 detects pizza boxes and their status (open or close).
+## ✅ State Transition Rules
 
-+ Tracking (DeepSORT/ByteTrack) assigns a unique ID to each box.
+A box is considered "Sold" if it transitions through certain status sequences:
 
-+ Determine whether the box is inside the ROI area.
+| Box ID | Observed Status History | Final Status |
+| :----- | :---------------------- | :----------- |
+| 01     | `["open", "close"]`   | ✅ Sold      |
+| 02     | `["close", "open", "close"]` | ✅ Sold      |
+| 03     | `["open"]` or `["close"]` | ⏳ Pending   |
 
-+ Record the status over time for each box by ID.
+## 🔁 Update Logic
 
-+ Apply state transition rules to determine if a box has been "sold".
+-   When a new box appears → Add to `array_pending`.
+-   When a box meets the sold condition → Move it to `array_sold`.
 
-Rules for Determining a Box as Sold: 
+## 🧾 Output (Real-time or Post-processing)
 
-![Screenshot 2025-06-18 181833](https://github.com/user-attachments/assets/d5072a60-17c9-43d6-9625-6d05b5bbeecf)
-![Screenshot 2025-06-18 181833](https://github.com/user-attachments/assets/d5072a60-17c9-43d6-9625-6d05b5bbeecf)
+-   `array_pending`: Boxes currently being monitored.
+-   `array_sold`: Boxes confirmed as sold.
 
-Update Flow: 
+## 🧠 System Components
 
-+ When a new box appears → add to array_pending.
+-   **Frontend**: A React web app for UI and visualization.
+-   **Backend**: A Flask-based server handling logic, tracking, and state updates.
+-   **Database**: MongoDB stores tracking history, feedback, and state data.
+-   **Tracking**: Based on DeepSORT or SFSORT (with Kalman Filter).
 
-+ When the status sequence meets the "sold" criteria → move from pending to sold.
 
-Output (Real-time or Post-video):
 
-+ array_pending: list of box IDs awaiting completion.
+## ⚙️ Training Method
 
-+ array_sold: list of box IDs marked as sold.
+To train the YOLOv11 model for pizza box detection, the following workflow was used:
 
-System Overview
+1.  **Data Preparation**: Video footage was used to extract individual frames. These frames were then manually labeled using `labelImg` to create the necessary annotations for object detection.
 
-The system is composed of two main services:
+2.  **Dataset Organization**: The labeled data was organized into a `data_process` folder, following the specific structure required for YOLOv11 model training. This folder includes:
 
-•
-Frontend: A web application built with React that provides the user interface.
+    -   `images/`: Contains the image files.
+    -   `labels/`: Contains the corresponding annotation files.
+    -   `best.pt`: The trained model weights.
+    -   `classes`: A text file listing the object classes.
+    -   `data`: A YAML file defining the dataset configuration.
 
-•
-Backend: A Flask-based API that handles data processing, interacts with the MongoDB database, and likely incorporates the Activate Learning and Reinforcement Learning components.
+           ```
+        label/
+        ├── images/               
+        │   ├── test/        
+        │   ├── train/
+        │   └── val/
+        │
+        ├── labels/              
+        │   ├── test/
+        │   ├── train/
+        │   └── val/
+        │
+        ├── classes.txt
+        └── data.yaml
+        ```
 
-•
-MongoDB: A NoSQL database used to store application data.
+4.  **Dataset Split**: The dataset for training consisted of 1080 image files. These were split into training, validation, and testing sets with an 8:1:1 ratio, with 8 in train, 1 in vali and 1 in test.
 
-How it Works
+5.  **Training Results**: The training process yielded the following performance metrics, demonstrating the model's learning progress and accuracy:
 
-1.
-Data Collection: The system tracks pizza sales data.
+    ![Training Metrics]![a991f9da-0928-481a-a982-9a60cdde6043](https://github.com/user-attachments/assets/963c1985-4ceb-4765-88e3-f1343b0e8636)
 
-2.
-Backend Processing: The backend processes this data, potentially applying machine learning models for feedback and learning.
 
-3.
-Frontend Display: The frontend visualizes the processed data and provides an interface for user interaction and feedback.
+6. **Data Folder**: https://drive.google.com/drive/u/2/folders/1FxAHPU5ll0oOJy7D6Evk117-LW-E1PvB
+   
 
-4.
-Database: MongoDB stores all the necessary data for the application.
 
-Getting Started
+## 🗂️ Project Structure
 
-To run this project, there are 3 options of running: with Docker Composer, run frontend local and run with GUI tkinter 
+```
+pizza-tracker/
+├── backend/               # Flask server, model inference, API
+│   ├── app.py             # Backend entry point
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── utils/             # Detection, tracking, ROI logic
+│
+├── frontend/              # React UI
+│   ├── src/
+│   └── Dockerfile
+│
+├── db/                    # MongoDB data (feedback, state)
+├── SFSORT/                # Tracking logic with Kalman Filter
+├── train/                 # Model training scripts
+├── main.py                # GUI-based execution entry point
+├── docker-compose.yml     # Docker service definitions
+└── README.md              # Project documentation
+```
 
-With GUI tkinter: 
+## 🚀 Getting Started
 
-run python main.py 
+You can run the project in three ways (Please connect with mongoDB localhost:27017 for feedback interface):
 
-With localhost: 
+### ✅ Option 1: With GUI (Tkinter)
 
-•
-Split the terminal in half
+```bash
+python main.py
+```
 
-• 
-Then run: cd backend/python app.py to activate backend server. 
+### ✅ Option 2: Manual Run (Frontend + Backend)
 
-• 
-Then run: cd frontend/src/components/npm start to start frontend.
+Split your terminal into two.
 
+**Run the backend:**
 
+```bash
+cd backend
+python app.py
+```
 
+**Run the frontend:**
 
-Prerequisites
+```bash
+cd frontend/src/components
+npm start
+```
 
-•
-Docker
+### ✅ Option 3: Using Docker Compose
 
-•
-Docker Compose
+**Step 1: Clone the Repository**
 
-Running with Docker Compose
+```bash
+git clone https://github.com/Thongnvt/Pizza_Tracking_System.git
+cd Pizza_Tracking_System
+```
 
-1.
-Clone the repository:
+**Step 2: Build & Run with Docker**
 
-2.
-Build and run the services:
+```bash
+docker-compose up --build
+```
 
-•
---build: This flag ensures that Docker images for the frontend and backend services are built from their respective Dockerfiles before starting the containers. If you have already built the images and haven't made changes to the Dockerfiles or dependencies, you can omit this flag for faster startup.
+You can skip `--build` if images are already built and unchanged.
 
+**Step 3: Access the App**
 
+-   **Frontend**: `http://localhost:3000`
+-   **Backend API**: `http://localhost:5000`
+-   **MongoDB**: internal access via port `27017`
 
-3.
-Access the application:
+### Stopping the Services
 
-•
-Frontend: Once the services are up, the frontend application should be accessible in your web browser at http://localhost:3000.
+```bash
+docker-compose down      # Stops and removes everything
+docker-compose stop      # Stops containers but keeps them
+```
 
-•
-Backend API: The backend API will be running on http://localhost:5000.
+## 📦 Dependencies
 
-•
-MongoDB: The MongoDB database will be accessible internally within the Docker network on port 27017.
+### 🔹 Backend (Python)
 
+From `requirements.txt`:
 
+-   `flask`, `flask-cors`, `flask-socketio`, `werkzeug`
+-   `numpy`, `opencv-python`, `matplotlib`, `pillow`
+-   `filterpy`, `lap`, `scipy`, `shapely`, `torch`, `ultralytics`
+-   `pymongo`, `requests`
 
-Stopping the services
+### 🔹 Frontend (React/Node.js)
 
-To stop and remove the containers, networks, and volumes created by docker-compose up, run:
+Handled via `package.json`, includes:
 
-Bash
+-   `react`, `axios`, `socket.io-client`, etc.
 
+## 🌟 Potential Extensions
 
-docker-compose down
+-   Integrate Reinforcement Learning to optimize detection strategies or ROI zones.
+-   Enable Active Learning via user feedback from the frontend.
+-   Add anomaly alerts, e.g., boxes opened but not closed.
 
+## 🤝 Contributing
 
-To stop the services but keep the containers running (e.g., to restart them later), use:
+Pull requests and feedback are welcome. Please open issues for any bugs or suggestions.
 
-Bash
+## 📄 License
 
-
-docker-compose stop
-
-
-Project Structure
-
-•
-backend/: Contains the core AI function, Flask backend application and its Dockerfile.
-
-•
-Dockerfile: Defines the Python environment and dependencies for the backend.
-
-•
-requirements.txt: Lists Python dependencies for the backend.
-
-•
-utils/: Core AI utilities use for detect and tracking. 
-
-
-
-
-
-•
-frontend/: Contains the React frontend application and its Dockerfile.
-
-•
-Dockerfile: Defines the Node.js environment and build process for the frontend.
-
-
-
-•
-docker-compose.yml: Defines the multi-container Docker application, including the frontend, backend, and MongoDB services.
-
-•
-db/: Contain database of user feedback.
-
-•
-SFSORT/: contain the tracking system, using SFSORT combine with Kalman Filter.
-•
-
-train/: Code using for training model
-
-•
-main.py: The entry point to run local with GUI tkinter.
-
-Dependencies
-
-Backend (Python)
-
-Key dependencies from requirements.txt:
-
-•
-flask
-
-•
-flask-cors
-
-•
-flask-socketio
-
-•
-werkzeug
-
-•
-numpy
-
-•
-opencv-python
-
-•
-filterpy
-
-•
-lap
-
-•
-scipy
-
-•
-matplotlib
-
-•
-pillow
-
-•
-pymongo
-
-•
-shapely
-
-•
-torch
-
-•
-ultralytics
-
-•
-requests
-
-Frontend (Node.js/React)
-
-Dependencies are managed via package.json and package-lock.json.
-
-
-How to run: 
+This project is open-source and licensed under the MIT License.
 
 
 
